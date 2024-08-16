@@ -79,6 +79,11 @@ call s:HL('StatusLine', 'white', 'lightbg')
 call s:HL('LineNr', 'lgrey', 'none')
 call s:HL('NonText', 'lgrey', 'none')
 call s:HL('Todo', 'red', 'none')
+call s:HL('StatusLineTerm', 'white', 'lgrey')
+call s:HL('StatusLineTermNC', 'white', 'lightbg')
+call s:HL('StatusLine', 'lgrey', 'white')
+call s:HL('StatusLineNC', 'lightbg', 'white')
+call s:HL('VertSplit', 'black', 'lgrey')
 
 hi! link Statement Normal
 hi! link Conditional Statement
