@@ -15,6 +15,7 @@ let s:col.black        = ['#191919', 233]
 let s:col.lightbg      = ['#262626', 233]
 let s:col.lgrey        = ['#7f7f7f', 244]
 let s:col.red          = ['#ff0000', 196]
+let s:col.blue         = ['#191970', 16]
 let s:col.none         = ['NONE', 'NONE']
 let s:underline        = 'underline'
 
@@ -60,7 +61,7 @@ call s:HL('Normal', 'white', 'none')
 call s:HL('Special', 'white', 'none')
 call s:HL('Directory', 'white', 'none')
 call s:HL('String', 'white', 'none')
-call s:HL('Visual', 'white', 'none')
+call s:HL('Visual', 'none', 'blue')
 call s:HL('ErrorMsg', 'red', 'none')
 call s:HL('Cursor', 'none', 'white')
 call s:HL('Comment', 'lgrey', 'none')
