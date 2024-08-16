@@ -11,7 +11,7 @@ set background=dark
 let g:colors_name="bw"
 " Colors
 let s:col              = {}
-let s:col.white        = ['#dbdbdb', 137]
+let s:col.white        = ['#ffffff', 137]
 let s:col.black        = ['#191919', 233]
 let s:col.lightbg      = ['#262626', 233]
 let s:col.lgrey        = ['#7f7f7f', 244]
@@ -22,10 +22,10 @@ let s:underline        = 'underline'
 
 " Terminal colors
 let g:terminal_ansi_colors = [
-	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
-	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
-	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
-	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',]
+	\'white', 'white', 'white', 'white',
+	\'white', 'white', 'white', 'white',
+	\'white', 'white', 'white', 'white',
+	\'white', 'white', 'white', 'white',]
 
 " Highlighting Function from https://github.com/sjl/badwolf
 function! s:HL(group, fg, ...)
