@@ -1,4 +1,3 @@
-" Black and white theme by Ebz
 
 hi clear
 
@@ -68,6 +67,9 @@ call s:HL('Comment', 'lgrey', 'none')
 call s:HL('Keyword', 'white', 'none')
 call s:HL('Statement', 'white', 'none')
 call s:HL('StatusLine', 'white', 'lightbg')
+call s:HL('LineNr', 'lgrey', 'none')
+call s:HL('NonText', 'lgrey', 'none')
+call s:HL('Todo', 'red', 'none')
 
 hi! link Statement Normal
 hi! link Conditional Statement
