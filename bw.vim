@@ -1,3 +1,4 @@
+" Black and white theme by Ebz
 
 hi clear
 
@@ -18,6 +19,13 @@ let s:col.red          = ['#ff0000', 196]
 let s:col.blue         = ['#191970', 16]
 let s:col.none         = ['NONE', 'NONE']
 let s:underline        = 'underline'
+
+" Terminal colors
+let g:terminal_ansi_colors = [
+	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
+	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
+	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',
+	\'#dbdbdb', '#dbdbdb', '#dbdbdb', '#dbdbdb',]
 
 " Highlighting Function from https://github.com/sjl/badwolf
 function! s:HL(group, fg, ...)
