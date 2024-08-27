@@ -1,1 +1,1 @@
-A simple black and white theme designed for vim/neovim. 
+A simple two color theme designed for vim/neovim. 
