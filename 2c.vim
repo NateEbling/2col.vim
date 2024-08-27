@@ -17,6 +17,8 @@ let s:col.lightbg      = ['#262626', 233]
 let s:col.lgrey        = ['#7f7f7f', 244]
 let s:col.red          = ['#ff0000', 196]
 let s:col.blue         = ['#191970', 16]
+let s:col.orange       = ['#a35f0b', 16]
+let s:col.green        = ['#44850c', 16]
 let s:col.none         = ['NONE', 'NONE']
 let s:underline        = 'underline'
 
@@ -79,16 +81,28 @@ call s:HL('StatusLine', 'col1', 'lightbg')
 call s:HL('LineNr', 'lgrey', 'none')
 call s:HL('NonText', 'lgrey', 'none')
 call s:HL('Todo', 'col1', 'none')
-call s:HL('StatusLineTerm', 'col1', 'col2')
-call s:HL('StatusLineTermNC', 'lightbg', 'col1')
-call s:HL('StatusLine', 'col2', 'col1')
-call s:HL('StatusLineNC', 'col1', 'col2')
+if has('nvim')
+    call s:HL('StatusLineTerm', 'col1', 'col2')
+    call s:HL('StatusLineTermNC', 'lightbg', 'col1')
+    call s:HL('StatusLine', 'col2', 'col1')
+    call s:HL('StatusLineNC', 'col1', 'col2')
+else
+    call s:HL('StatusLineTerm', 'col2', 'col1')
+    call s:HL('StatusLineTermNC', 'lightbg', 'col2')
+    call s:HL('StatusLine', 'col1', 'col2')
+    call s:HL('StatusLineNC', 'col2', 'col1')
+endif
 call s:HL('VertSplit', 'col2', 'col1')
 call s:HL('MatchParen', 'none', 'none')
 call s:HL('Pmenu', 'col1', 'col2')
 call s:HL('CursorLine', 'col1', 'none')
 call s:HL('WarningMsg', 'none', 'col2')
 call s:HL('MoreMsg', 'none', 'col2')
+call s:HL('DiagnosticWarn', 'orange', 'none')
+call s:HL('DiagnosticError', 'red', 'none')
+call s:HL('DiagnosticInfo', 'blue', 'none')
+call s:HL('DiagnosticHint', 'green', 'none')
+call s:HL('DiagnosticOk', 'lgrey', 'none')
 
 hi! link Statement Normal
 hi! link Conditional Statement
