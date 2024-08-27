@@ -1,4 +1,4 @@
-" Black and white theme by Ebz
+" 2 color theme by Ebz
 
 hi clear
 
@@ -11,8 +11,8 @@ set background=dark
 let g:colors_name="bw"
 " Colors
 let s:col              = {}
-let s:col.white        = ['#ededed', 137]
-let s:col.black        = ['#191919', 233]
+let s:col.col1         = ['#000000', 137] " foreground
+let s:col.col2         = ['#fafad2', 233] " background
 let s:col.lightbg      = ['#262626', 233]
 let s:col.lgrey        = ['#7f7f7f', 244]
 let s:col.red          = ['#ff0000', 196]
@@ -22,10 +22,10 @@ let s:underline        = 'underline'
 
 " Terminal colors
 let g:terminal_ansi_colors = [
-	\'white', 'white', 'white', 'white',
-	\'white', 'white', 'white', 'white',
-	\'white', 'white', 'white', 'white',
-	\'white', 'white', 'white', 'white',]
+	\'col1', 'col1', 'col1', 'col1',
+	\'col1', 'col1', 'col1', 'col1',
+	\'col1', 'col1', 'col1', 'col1',
+	\'col1', 'col1', 'col1', 'col1',]
 
 " Highlighting Function from https://github.com/sjl/badwolf
 function! s:HL(group, fg, ...)
@@ -65,26 +65,30 @@ function! s:HL(group, fg, ...)
     execute histring
 endfunction
 
-call s:HL('Normal', 'white', 'none')
-call s:HL('Special', 'white', 'none')
-call s:HL('Directory', 'white', 'none')
-call s:HL('String', 'white', 'none')
-call s:HL('Visual', 'black', 'white')
+call s:HL('Normal', 'col1', 'col2')
+call s:HL('Special', 'col1', 'none')
+call s:HL('Directory', 'col1', 'none')
+call s:HL('String', 'col1', 'none')
+call s:HL('Visual', 'col2', 'col1')
 call s:HL('ErrorMsg', 'red', 'none')
-call s:HL('Cursor', 'none', 'white')
-call s:HL('Comment', 'white', 'none')
-call s:HL('Keyword', 'white', 'none')
-call s:HL('Statement', 'white', 'none')
-call s:HL('StatusLine', 'white', 'lightbg')
+call s:HL('Cursor', 'col2', 'col1')
+call s:HL('Comment', 'col1', 'none')
+call s:HL('Keyword', 'col1', 'none')
+call s:HL('Statement', 'col1', 'none')
+call s:HL('StatusLine', 'col1', 'lightbg')
 call s:HL('LineNr', 'lgrey', 'none')
 call s:HL('NonText', 'lgrey', 'none')
-call s:HL('Todo', 'white', 'none')
-call s:HL('StatusLineTerm', 'white', 'black')
-call s:HL('StatusLineTermNC', 'lightbg', 'white')
-call s:HL('StatusLine', 'black', 'white')
-call s:HL('StatusLineNC', 'white', 'lightbg')
-call s:HL('VertSplit', 'black', 'white')
+call s:HL('Todo', 'col1', 'none')
+call s:HL('StatusLineTerm', 'col1', 'col2')
+call s:HL('StatusLineTermNC', 'lightbg', 'col1')
+call s:HL('StatusLine', 'col2', 'col1')
+call s:HL('StatusLineNC', 'col1', 'col2')
+call s:HL('VertSplit', 'col2', 'col1')
 call s:HL('MatchParen', 'none', 'none')
+call s:HL('Pmenu', 'col1', 'col2')
+call s:HL('CursorLine', 'col1', 'none')
+call s:HL('WarningMsg', 'none', 'col2')
+call s:HL('MoreMsg', 'none', 'col2')
 
 hi! link Statement Normal
 hi! link Conditional Statement
@@ -115,27 +119,27 @@ if has('nvim')
   hi! link @punctuation Normal
   hi! link @variable Normal
 
-  let g:terminal_color_0 = s:col.black[0]
-  let g:terminal_color_8 = s:col.white[0]
+  let g:terminal_color_0 = s:col.col2[0]
+  let g:terminal_color_8 = s:col.col1[0]
 
   let g:terminal_color_1 = s:col.red[0]
   let g:terminal_color_9 = s:col.red[0]
 
-  let g:terminal_color_2 = s:col.white[0]
-  let g:terminal_color_10 = s:col.white[0]
+  let g:terminal_color_2 = s:col.col1[0]
+  let g:terminal_color_10 = s:col.col1[0]
 
-  let g:terminal_color_3 = s:col.white[0]
-  let g:terminal_color_11 = s:col.white[0]
+  let g:terminal_color_3 = s:col.col1[0]
+  let g:terminal_color_11 = s:col.col1[0]
 
-  let g:terminal_color_4 = s:col.white[0]
-  let g:terminal_color_12 = s:col.white[0]
+  let g:terminal_color_4 = s:col.col1[0]
+  let g:terminal_color_12 = s:col.col1[0]
 
-  let g:terminal_color_5 = s:col.white[0]
-  let g:terminal_color_13 = s:col.white[0]
+  let g:terminal_color_5 = s:col.col1[0]
+  let g:terminal_color_13 = s:col.col1[0]
 
-  let g:terminal_color_6 = s:col.white[0]
-  let g:terminal_color_14 = s:col.white[0]
+  let g:terminal_color_6 = s:col.col1[0]
+  let g:terminal_color_14 = s:col.col1[0]
 
-  let g:terminal_color_7 = s:col.white[0]
-  let g:terminal_color_15 = s:col.white[0]
+  let g:terminal_color_7 = s:col.col1[0]
+  let g:terminal_color_15 = s:col.col1[0]
 endif
