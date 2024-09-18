@@ -22,13 +22,6 @@ let s:col.green        = ['#44850c', 16]
 let s:col.none         = ['NONE', 'NONE']
 let s:underline        = 'underline'
 
-" Terminal colors
-let g:terminal_ansi_colors = [
-	\'col1', 'col1', 'col1', 'col1',
-	\'col1', 'col1', 'col1', 'col1',
-	\'col1', 'col1', 'col1', 'col1',
-	\'col1', 'col1', 'col1', 'col1',]
-
 " Highlighting Function from https://github.com/sjl/badwolf
 function! s:HL(group, fg, ...)
     " Arguments: group, guifg, guibg, gui, guisp
@@ -128,32 +121,3 @@ hi! link Type Statement
 hi! link StorageClass Statement
 hi! link Structure Statement
 hi! link Typedef Statement
-
-if has('nvim')
-  hi! link @punctuation Normal
-  hi! link @variable Normal
-
-  let g:terminal_color_0 = s:col.col2[0]
-  let g:terminal_color_8 = s:col.col1[0]
-
-  let g:terminal_color_1 = s:col.red[0]
-  let g:terminal_color_9 = s:col.red[0]
-
-  let g:terminal_color_2 = s:col.col1[0]
-  let g:terminal_color_10 = s:col.col1[0]
-
-  let g:terminal_color_3 = s:col.col1[0]
-  let g:terminal_color_11 = s:col.col1[0]
-
-  let g:terminal_color_4 = s:col.col1[0]
-  let g:terminal_color_12 = s:col.col1[0]
-
-  let g:terminal_color_5 = s:col.col1[0]
-  let g:terminal_color_13 = s:col.col1[0]
-
-  let g:terminal_color_6 = s:col.col1[0]
-  let g:terminal_color_14 = s:col.col1[0]
-
-  let g:terminal_color_7 = s:col.col1[0]
-  let g:terminal_color_15 = s:col.col1[0]
-endif
