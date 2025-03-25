@@ -8,7 +8,7 @@ let g:colors_name="bw"
 " Colors
 let s:col              = {}
 let s:col.col1         = ['#000000', 137] " foreground
-let s:col.col2         = ['#fafad2', 233] " background
+let s:col.col2         = ['#ffffea', 233] " background
 let s:col.lightbg      = ['#262626', 233]
 let s:col.lgrey        = ['#7f7f7f', 244]
 let s:col.red          = ['#ff0000', 196]
