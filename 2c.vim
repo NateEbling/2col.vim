@@ -75,6 +75,7 @@ call s:HL('DiagnosticError', 'red', 'none')
 call s:HL('DiagnosticInfo', 'blue', 'none')
 call s:HL('DiagnosticHint', 'green', 'none')
 call s:HL('DiagnosticOk', 'lgrey', 'none')
+call s:HL('QuickFixLine', 'col1', 'none')
 hi! link Statement Normal
 hi! link Conditional Statement
 hi! link Repeat Statement
