@@ -11,6 +11,7 @@ let s:col.col1         = ['#000000', 0] " foreground
 let s:col.col2         = ['#ffffea', 0] " background
 let s:col.lightbg      = ['#262626', 0]
 let s:col.lgrey        = ['#7f7f7f', 0]
+let s:col.lgrey2       = ['#b7b7b7', 0]
 let s:col.red          = ['#ff0000', 0]
 let s:col.blue         = ['#191970', 0]
 let s:col.orange       = ['#a35f0b', 0]
@@ -57,6 +58,7 @@ call s:HL('Comment', 'col1', 'none')
 call s:HL('Keyword', 'col1', 'none')
 call s:HL('Statement', 'col1', 'none')
 call s:HL('StatusLine', 'col2', 'col1')
+call s:HL('StatusLineNC', 'col1', 'lgrey2')
 call s:HL('LineNr', 'lgrey', 'none')
 call s:HL('NonText', 'lgrey', 'none')
 call s:HL('Todo', 'col1', 'none')
@@ -76,6 +78,11 @@ call s:HL('DiagnosticInfo', 'blue', 'none')
 call s:HL('DiagnosticHint', 'green', 'none')
 call s:HL('DiagnosticOk', 'lgrey', 'none')
 call s:HL('QuickFixLine', 'col1', 'none')
+call s:HL('DiffAdd', 'green', 'none')
+call s:HL('DiffChange', 'orange', 'none')
+call s:HL('DiffDelete', 'red', 'none')
+call s:HL('DiffText', 'col1', 'none)
+
 hi! link Statement Normal
 hi! link Conditional Statement
 hi! link Repeat Statement
