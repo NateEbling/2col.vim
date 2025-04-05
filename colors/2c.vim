@@ -106,15 +106,6 @@ hi! link Structure Statement
 hi! link Typedef Statement
 
 if has('nvim')
-    call s:HL('StatusLineTerm', 'col1', 'col2')
-    call s:HL('StatusLineTermNC', 'lightbg', 'col1')
-    call s:HL('StatusLine', 'col2', 'col1')
-    call s:HL('StatusLineNC', 'col1', 'col2')
     call s:HL('@variable', 'col1', 'col2')
     call s:HL('@punctuation.bracket.c', 'col1', 'col2')
-else
-    call s:HL('StatusLineTerm', 'col2', 'col1')
-    call s:HL('StatusLineTermNC', 'lightbg', 'col2')
-    call s:HL('StatusLine', 'col1', 'col2')
-    call s:HL('StatusLineNC', 'col2', 'col1')
 endif
