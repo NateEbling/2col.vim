@@ -81,7 +81,7 @@ call s:HL('QuickFixLine', 'col1', 'none')
 call s:HL('DiffAdd', 'green', 'none')
 call s:HL('DiffChange', 'orange', 'none')
 call s:HL('DiffDelete', 'red', 'none')
-call s:HL('DiffText', 'col1', 'none)
+call s:HL('DiffText', 'col1', 'none')
 
 hi! link Statement Normal
 hi! link Conditional Statement
