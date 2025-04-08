@@ -16,6 +16,7 @@ let s:col.red          = ['#ff0000', 0]
 let s:col.blue         = ['#191970', 0]
 let s:col.orange       = ['#a35f0b', 0]
 let s:col.green        = ['#44850c', 0]
+let s:col.clrcol       = ['#e5e5d5', 0]
 let s:col.none         = ['NONE', 'NONE']
 let s:underline        = 'underline'
 " Highlighting Function from https://github.com/sjl/badwolf
@@ -82,7 +83,7 @@ call s:HL('DiffAdd', 'green', 'none')
 call s:HL('DiffChange', 'orange', 'none')
 call s:HL('DiffDelete', 'red', 'none')
 call s:HL('DiffText', 'col1', 'none')
-call s:HL('Colorcolumn', 'none', 'lgrey2')
+call s:HL('Colorcolumn', 'none', 'clrcol')
 
 hi! link Statement Normal
 hi! link Conditional Statement
