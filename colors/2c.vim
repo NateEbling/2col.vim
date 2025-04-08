@@ -82,7 +82,7 @@ call s:HL('DiffAdd', 'green', 'none')
 call s:HL('DiffChange', 'orange', 'none')
 call s:HL('DiffDelete', 'red', 'none')
 call s:HL('DiffText', 'col1', 'none')
-call s:HL('Colorcolumn', 'none', 'lgrey')
+call s:HL('Colorcolumn', 'none', 'lgrey2')
 
 hi! link Statement Normal
 hi! link Conditional Statement
