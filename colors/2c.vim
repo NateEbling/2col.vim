@@ -9,6 +9,7 @@ let g:colors_name="bw"
 let s:col              = {}
 let s:col.col1         = ['#000000', 0] " foreground
 let s:col.col2         = ['#ffffea', 0] " background
+let s:col.dcol2        = ['#f3f394', 0]
 let s:col.lightbg      = ['#262626', 0]
 let s:col.lgrey        = ['#7f7f7f', 0]
 let s:col.lgrey2       = ['#b7b7b7', 0]
@@ -82,7 +83,7 @@ call s:HL('DiffAdd', 'green', 'none')
 call s:HL('DiffChange', 'orange', 'none')
 call s:HL('DiffDelete', 'red', 'none')
 call s:HL('DiffText', 'col1', 'none')
-call s:HL('Colorcolumn', 'lgrey', 'none')
+call s:HL('Colorcolumn', 'none', 'dcol2')
 
 hi! link Statement Normal
 hi! link Conditional Statement
