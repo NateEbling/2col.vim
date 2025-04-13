@@ -59,8 +59,11 @@ call s:HL('Comment', 'col1', 'none')
 call s:HL('Keyword', 'col1', 'none')
 call s:HL('Statement', 'col1', 'none')
 if has('nvim')
-   call s:HL('StatusLine', 'col2', 'col1')
-   call s:HL('StatusLineNC', 'col2', 'col1')
+    call s:HL('StatusLine', 'col2', 'col1')
+    call s:HL('StatusLineNC', 'col2', 'col1')
+else
+    call s:HL('StatusLine', 'col2', 'col1', 'none')
+    call s:HL('StatusLineNC', 'col2', 'col1', 'none')
 endif
 call s:HL('LineNr', 'lgrey', 'none')
 call s:HL('NonText', 'lgrey', 'none')
