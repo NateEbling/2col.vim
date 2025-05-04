@@ -112,7 +112,5 @@ hi! link StorageClass Statement
 hi! link Structure Statement
 hi! link Typedef Statement
 
-if has('nvim')
-    call s:HL('@variable', 'col1', 'col2')
-    call s:HL('@punctuation.bracket.c', 'col1', 'col2')
-endif
+" Telescope
+call s:HL('TelescopePreviewLine', 'none', 'none')
