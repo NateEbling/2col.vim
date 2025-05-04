@@ -114,3 +114,4 @@ hi! link Typedef Statement
 
 " Telescope
 call s:HL('TelescopePreviewLine', 'none', 'none')
+call s:HL('TelescopeSelection', 'none', 'none')
