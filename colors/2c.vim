@@ -4,10 +4,10 @@ hi clear
 syntax reset
 
 " Colors
-let s:bg = '#ffffea'
-let s:fg = '#000000'
-let s:rd = '#f54242' " red
-let s:lg = '#7f7f7f' " light grey
+let s:bg = ['#ffffea']
+let s:fg = ['#000000']
+let s:rd = ['#f54242'] " red
+let s:lg = ['#7f7f7f'] " light grey
 
 hi Normal       guibg=s:bg    guifg=s:fg
 hi Visual       guibg=s:fg    guifg=s:bg
