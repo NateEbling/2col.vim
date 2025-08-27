@@ -6,11 +6,11 @@ syntax reset
 hi Normal       guibg=#ffffea guifg=#000000
 hi Visual       guibg=#000000 guifg=#ffffea
 hi Cursor       guibg=#000000 guifg=#ffffea
-hi StatusLine   guibg=#000000 guifg=#ffffea
+hi StatusLine   guibg=#000000 guifg=#ffffea    
 hi StatuslineNC guibg=#000000 guifg=#ffffea
-hi LineNr       guibg=none    guifg=#7f7f7f
-hi NonText      guibg=none    guifg=#7f7f7f
-hi Todo         guibg=none    guifg=#f54242
+hi LineNr       guibg=NONE    guifg=#7f7f7f
+hi NonText      guibg=NONE    guifg=#7f7f7f
+hi Todo         guibg=NONE    guifg=#f54242
 hi VertSplit    guibg=#000000 guifg=#ffffea
 
 hi link         MatchParen    Normal
