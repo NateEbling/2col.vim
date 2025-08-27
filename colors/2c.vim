@@ -1,5 +1,6 @@
 " 2 color theme by Nate Ebling
 
+set background=dark
 hi clear
 syntax reset
 
