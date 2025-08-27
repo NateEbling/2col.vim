@@ -1,24 +1,17 @@
 " 2 color theme by Nate Ebling
 
-set background=light
 hi clear
 syntax reset
 
-" Colors
-let s:bg = ['#ffffea']
-let s:fg = ['#000000']
-let s:rd = ['#f54242'] " red
-let s:lg = ['#7f7f7f'] " light grey
-
-hi Normal       guibg=s:bg    guifg=s:fg
-hi Visual       guibg=s:fg    guifg=s:bg
-hi Cursor       guibg=s:fg    guifg=s:bg
-hi StatusLine   guibg=s:fg    guifg=s:bg
-hi StatuslineNC guibg=s:fg    guifg=s:bg
-hi LineNr       guibg=none    guifg=s:lg
-hi NonText      guibg=none    guifg=s:lg
-hi Todo         guibg=none    guifg=s:rd
-hi VertSplit    guibg=s:fg    guifg=s:bg
+hi Normal       guibg=#ffffea guifg=#000000
+hi Visual       guibg=#000000 guifg=#ffffea
+hi Cursor       guibg=#000000 guifg=#ffffea
+hi StatusLine   guibg=#000000 guifg=#ffffea
+hi StatuslineNC guibg=#000000 guifg=#ffffea
+hi LineNr       guibg=none    guifg=#7f7f7f
+hi NonText      guibg=none    guifg=#7f7f7f
+hi Todo         guibg=none    guifg=#f54242
+hi VertSplit    guibg=#000000 guifg=#ffffea
 
 hi link         MatchParen    Normal
 hi link         Title         Normal
