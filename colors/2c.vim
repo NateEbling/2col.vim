@@ -6,8 +6,8 @@ syntax reset
 hi Normal       guibg=#ffffea guifg=#000000
 hi Visual       guibg=#000000 guifg=#ffffea
 hi Cursor       guibg=#000000 guifg=#ffffea
-hi StatusLine   guibg=#000000 guifg=#ffffea      gui=NONE
-hi StatuslineNC guibg=#000000 guifg=#ffffea      gui=NONE
+hi StatusLine   guibg=#000000 guifg=#ffffea      gui=NONE      cterm=NONE
+hi StatuslineNC guibg=#000000 guifg=#ffffea      gui=NONE      cterm=NONE
 hi LineNr       guibg=NONE    guifg=#7f7f7f
 hi NonText      guibg=NONE    guifg=#7f7f7f
 hi Todo         guibg=NONE    guifg=#f54242
