@@ -10,7 +10,7 @@ hi Cursor          guibg=black      guifg=#ffffea
 hi CursorLine      guibg=black      guifg=#ffffea
 hi Normal          guibg=#ffffea    guifg=black
 hi NonText         guibg=#ffffea    guifg=#7f7f7f
-hi Visual          guibg=black      guifg=black
+hi Visual          guibg=black      guifg=#ffffea
 hi Linenr          guibg=bg         guifg=#7f7f7f
 hi Directory       guibg=#ffffea    guifg=black
 hi IncSearch       guibg=#ffffea    guifg=black
