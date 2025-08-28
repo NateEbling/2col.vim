@@ -39,11 +39,11 @@ hi DiffText        guibg=#884444    guifg=fg
 hi Comment         guibg=#ffffea    guifg=#696969
 
 hi Constant        guibg=#ffffea    guifg=black
-hi String          guibg=#ffffea    guifg=#00a12b
+hi String          guibg=#ffffea    guifg=black
 hi Character       guibg=#ffffea    guifg=black
-hi Number          guibg=#ffffea    guifg=#a13300
+hi Number          guibg=#ffffea    guifg=black
 hi Boolean         guibg=#ffffea    guifg=black
-hi Float           guibg=#ffffea    guifg=#a13300
+hi Float           guibg=#ffffea    guifg=#black
 
 hi Identifier      guibg=#ffffea    guifg=black
 hi Function        guibg=#ffffea    guifg=black
