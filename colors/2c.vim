@@ -24,7 +24,7 @@ hi link            MoreMsg          ModeMsg
 hi Question        guibg=#ffffea    guifg=#000000
 hi link            WarningMsg       ErrorMsg
 
-hi StatusLine      guibg=#000000    guifg=#ffffea
+hi StatusLine      guibg=#000000    guifg=#ffffea    cterm=none
 hi StatusLineNC    guibg=#757575    guifg=#ffffea
 hi VertSplit       guibg=#ffffea    guifg=#000000
 
