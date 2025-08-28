@@ -6,27 +6,27 @@ syntax reset
 
 " Colors for the User Interface.
 
-hi Cursor          guibg=#000000    guifg=#ffffea
-hi Normal          guibg=#ffffea    guifg=#000000
-hi NonText         guibg=bg         guifg=#7f7f7f
-hi Visual          guibg=#000000    guifg=bg
+hi Cursor          guibg=black      guifg=#ffffea
+hi Normal          guibg=#ffffea    guifg=black
+hi NonText         guibg=#ffffea    guifg=#7f7f7f
+hi Visual          guibg=black      guifg=black
 hi Linenr          guibg=bg         guifg=#7f7f7f
-hi Directory       guibg=#ffffea    guifg=#000000
-hi IncSearch       guibg=#ffffea    guifg=#000000
+hi Directory       guibg=#ffffea    guifg=black
+hi IncSearch       guibg=#ffffea    guifg=black
 hi link            Search           IncSearch
 
-hi SpecialKey      guibg=#ffffea    guifg=#000000
-hi Titled          guibg=#ffffea    guifg=#000000
+hi SpecialKey      guibg=#ffffea    guifg=black
+hi Titled          guibg=#ffffea    guifg=black
 
 hi ErrorMsg        guibg=#ffffea    guifg=#ff0000
-hi ModeMsg         guibg=#ffffea    guifg=#000000
+hi ModeMsg         guibg=#ffffea    guifg=black
 hi link            MoreMsg          ModeMsg
-hi Question        guibg=#ffffea    guifg=#000000
+hi Question        guibg=#ffffea    guifg=black
 hi link            WarningMsg       ErrorMsg
 
-hi StatusLine      guibg=#000000    guifg=#ffffea    cterm=none
+hi StatusLine      guibg=black      guifg=#ffffea    cterm=none
 hi StatusLineNC    guibg=#757575    guifg=#ffffea    cterm=none
-hi VertSplit       guibg=#ffffea    guifg=#000000    cterm=none
+hi VertSplit       guibg=#ffffea    guifg=black      cterm=none
 
 hi DiffAdd         guibg=#446688    guifg=fg
 hi DiffChange      guibg=#558855    guifg=fg
@@ -37,46 +37,47 @@ hi DiffText        guibg=#884444    guifg=fg
 
 hi Comment         guibg=#ffffea    guifg=#696969
 
-hi Constant        guibg=#ffffea    guifg=#000000
-hi String          guibg=#ffffea    guifg=#000000
-hi Character       guibg=#ffffea    guifg=#000000
-hi Number          guibg=#ffffea    guifg=#000000
-hi Boolean         guibg=#ffffea    guifg=#000000
-hi Float           guibg=#ffffea    guifg=#000000
+hi Constant        guibg=#ffffea    guifg=black
+hi String          guibg=#ffffea    guifg=#00a12b
+hi Character       guibg=#ffffea    guifg=black
+hi Number          guibg=#ffffea    guifg=#a13300
+hi Boolean         guibg=#ffffea    guifg=black
+hi Float           guibg=#ffffea    guifg=#a13300
 
-hi Identifier      guibg=#ffffea    guifg=#000000
-hi Function        guibg=#ffffea    guifg=#000000
-hi Statement       guibg=#ffffea    guifg=#000000
+hi Identifier      guibg=#ffffea    guifg=black
+hi Function        guibg=#ffffea    guifg=black
+hi Statement       guibg=#ffffea    guifg=black
 
-hi Conditional     guibg=#ffffea    guifg=#000000
-hi Repeat          guibg=#ffffea    guifg=#000000
-hi Label           guibg=#ffffea    guifg=#000000
-hi Operator        guibg=#ffffea    guifg=#000000
-hi Keyword         guibg=#ffffea    guifg=#000000
-hi Exception       guibg=#ffffea    guifg=#000000
+hi Conditional     guibg=#ffffea    guifg=black
+hi Repeat          guibg=#ffffea    guifg=black
+hi Label           guibg=#ffffea    guifg=black
+hi Operator        guibg=#ffffea    guifg=black
+hi Keyword         guibg=#ffffea    guifg=black
+hi Exception       guibg=#ffffea    guifg=black
 
-hi PreProc         guibg=#ffffea    guifg=#000000
-hi Include         guibg=#ffffea    guifg=#000000
+hi PreProc         guibg=#ffffea    guifg=black
+hi Include         guibg=#ffffea    guifg=black
 hi link            Define           Include
 hi link            Macro            Include
 hi link            PreCondit        Include
 
-hi Type            guibg=#ffffea    guifg=#000000
-hi StorageClass    guibg=#ffffea    guifg=#000000
-hi Structure       guibg=#ffffea    guifg=#000000
-hi Typedef         guibg=#ffffea    guifg=#000000
+hi Type            guibg=#ffffea    guifg=black
+hi StorageClass    guibg=#ffffea    guifg=black
+hi Structure       guibg=#ffffea    guifg=black
+hi Typedef         guibg=#ffffea    guifg=black
 
-hi Special         guibg=#ffffea    guifg=#000000
-hi SpecialChar     guibg=#ffffea    guifg=#000000
-hi Tag             guibg=#ffffea    guifg=#000000
-hi Delimiter       guibg=#ffffea    guifg=#000000
-hi SpecialComment  guibg=#ffffea    guifg=#000000
-hi Debug           guibg=#ffffea    guifg=#000000
+hi Special         guibg=#ffffea    guifg=black
+hi SpecialChar     guibg=#ffffea    guifg=black
+hi Tag             guibg=#ffffea    guifg=black
+hi Delimiter       guibg=#ffffea    guifg=black
+hi SpecialComment  guibg=#ffffea    guifg=black
+hi Debug           guibg=#ffffea    guifg=black
 
-hi Title           guibg=#ffffea    guifg=#000000
-hi Ignore          guibg=#ffffea    guifg=#000000
+hi Title           guibg=#ffffea    guifg=black
+hi Ignore          guibg=#ffffea    guifg=black
 hi Error           guibg=#ffffea    guifg=#ff0000
 hi Todo            guibg=#ffffea    guifg=#ff0000
+hi MatchParen      guibg=#ffffea    guifg=black
 
 " And finally.
 
