@@ -7,6 +7,7 @@ syntax reset
 " Colors for the User Interface.
 
 hi Cursor          guibg=black      guifg=#ffffea
+hi CursorLine      guibg=black      guifg=#ffffea
 hi Normal          guibg=#ffffea    guifg=black
 hi NonText         guibg=#ffffea    guifg=#7f7f7f
 hi Visual          guibg=black      guifg=black
